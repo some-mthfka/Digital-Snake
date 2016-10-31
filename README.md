@@ -33,6 +33,7 @@ Main loop is more interesting. Much more. The main loop is implemented as a coun
   b.	Drawing of an apple is done right after generating one.
   
   c.	When checking for collision of snake’s head with an apple, it is decided whether to hand the control to the next module (no collision) or to continue, which would mean that a collision happened and some action need to be taken.
+  
   d.	 When snake eats an apple, it grows. Here is how it happens: all the memory cells starting from snake’s position + 1 are shifted to the right. This means that there will be a space between the current head and the shifted part. In fact, this space will be considered as tail by module 1, which will write a correct value instead. Then, execution is handed to module 1 again.
 
 The game ends when either the size of the snake grows to fifty cells or it eats itself (or when Logisim lags, ha ha ha).
