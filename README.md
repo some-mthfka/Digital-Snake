@@ -1,5 +1,5 @@
 # Digital-Snake
-Built with Logisim
+Built with [Logisim](http://www.cburch.com/logisim/)
 
 ## Screenshots
 
